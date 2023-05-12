@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="1447.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AppointmentForDoctorController">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="1447.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Ressource/doctorr.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button" layoutX="1279.0" layoutY="619.0" mnemonicParsing="false" onAction="#gohome" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="page principal" />
+      <Text layoutX="974.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="392.0" layoutY="75.0" mnemonicParsing="false" onAction="#gomodif" prefHeight="45.0" prefWidth="151.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="Modifier une réservation ">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="1145.0" layoutY="617.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="39.0" prefWidth="118.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="Actualiser" />
+      <ScrollPane layoutX="392.0" layoutY="185.0" prefHeight="419.0" prefWidth="1046.0">
+         <content>
+            <VBox fx:id="vb" prefHeight="414.0" prefWidth="1041.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="753.0" layoutY="80.0" prefHeight="35.0" prefWidth="333.0" text="Liste des RendezVous" textFill="#23b2b2">
+         <font>
+            <Font name="Britannic Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="907.0" layoutY="160.0" stylesheets="@list.css" />
+      <TextField fx:id="rech" layoutX="1204.0" layoutY="116.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-radius: 200;" />
+      <Button layoutX="401.0" layoutY="619.0" mnemonicParsing="false" onAction="#pdf" prefHeight="39.0" prefWidth="157.0" style="-fx-background-color: #F6FFDE;" text="Export to PDF" />
+      <Label layoutX="612.0" layoutY="158.0" stylesheets="@list.css" text="Date Rendez Vous" textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="993.0" layoutY="158.0" prefHeight="22.0" prefWidth="63.0" stylesheets="@list.css" text="type" textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1257.0" layoutY="158.0" stylesheets="@list.css" text="categorie" textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="158.0" stylesheets="@list.css" text="patient" textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="1280.0" layoutY="58.0" mnemonicParsing="false" onAction="#gostat" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: #F6FFDE;" text="Statistique">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="665.0" prefWidth="327.0" style="-fx-background-color: #D4FAFC;">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="319.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ImageView fitHeight="280.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressource/logopi.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="50.0" prefWidth="319.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goPost" prefHeight="72.0" prefWidth="319.0" style="-fx-background-color: #F6BA6F;" text="Post" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="44.0">
+                     <image>
+                        <Image url="@../Ressource/poster.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goord" prefHeight="72.0" prefWidth="319.0" style="-fx-background-color: #F6BA6F;" text="Ordonnance" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="44.0">
+                     <image>
+                        <Image url="@../Ressource/consultation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goRDV" prefHeight="72.0" prefWidth="319.0" style="-fx-background-color: #F6BA6F;" text=" Rendez Vous" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../Ressource/icons8-person-calendar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="87.0" text="log out" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

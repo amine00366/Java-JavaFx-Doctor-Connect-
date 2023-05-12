@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ChoixBoxController">
+   <children>
+      <ImageView fitHeight="591.0" fitWidth="794.0" layoutX="8.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Ressource/BGJava.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choixType" layoutX="296.0" layoutY="152.0" prefHeight="25.0" prefWidth="206.0" />
+      <ChoiceBox fx:id="choixcat" layoutX="296.0" layoutY="312.0" prefHeight="25.0" prefWidth="206.0" />
+      <DatePicker fx:id="datedebut" layoutX="296.0" layoutY="227.0" prefHeight="25.0" prefWidth="206.0" />
+      <Button layoutX="248.0" layoutY="512.0" mnemonicParsing="false" onAction="#ajouterRendezVous" prefHeight="45.0" prefWidth="313.0" style="-fx-background-color: A6D0DD;" text="Ajouter Un Rendez Vous" textFill="#e4531f">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font></Button>
+      <Label alignment="TOP_RIGHT" layoutX="76.0" layoutY="229.0" style="-fx-background-color: #FDF7C3;" text="Date du Rendez Vous" textFill="#f50000">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="76.0" layoutY="314.0" style="-fx-background-color: #FDF7C3;" text="Categorie" textFill="RED">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="90.0" layoutY="154.0" style="-fx-background-color: #FDF7C3;" text="Type" textFill="RED">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="28.0" style="-fx-background-color: #E4DCCF;" text="Ajouter un Rendez Vous" textFill="#0989f2">
+         <font>
+            <Font name="Calisto MT" size="44.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="time" layoutX="296.0" layoutY="395.0" prefHeight="25.0" prefWidth="206.0" />
+      <Label alignment="TOP_RIGHT" layoutX="71.0" layoutY="408.0" style="-fx-background-color: #FDF7C3;" text="Heure de Rendez Vous" textFill="RED">
+         <font>
+            <Font name="Lucida Bright Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="648.0" layoutY="509.0" mnemonicParsing="false" onAction="#goback" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #F45050;" text="Retour">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

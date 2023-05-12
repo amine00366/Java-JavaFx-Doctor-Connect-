@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="807.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.BACKsidebarController">
+
+   <children>
+      <BorderPane prefHeight="806.0" prefWidth="1255.0">
+         <left>
+            <VBox prefHeight="390.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="gestionRV" alignment="BASELINE_LEFT" cache="true" graphicTextGap="10.0" mnemonicParsing="false" onAction="#GoRV" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" styleClass="mainFxmlClass" stylesheets="@../../../PIDEV/src/pidev/src/JavaFx/interfaceproduit.css" text="Rendez_vous" textFill="#fa9107">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/rendez-vous.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <FlowPane prefHeight="23.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="ModifierRDV" mnemonicParsing="false" onAction="#ModifierRDV" prefHeight="26.0" prefWidth="83.0" text="Modifier" />
+                        <Button fx:id="AjouterRDV" mnemonicParsing="false" onAction="#AjouterRDV" prefHeight="28.0" prefWidth="55.0" text="Ajouter" />
+                        <Button fx:id="StRDV" mnemonicParsing="false" onAction="#StRDV" prefHeight="27.0" prefWidth="58.0" text="Stat" />
+                     </children>
+                  </FlowPane>
+                  <Button fx:id="Rec" alignment="BASELINE_LEFT" cache="true" graphicTextGap="10.0" mnemonicParsing="false" onAction="#GoRec" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" styleClass="mainFxmlClass" stylesheets="@../../../PIDEV/src/pidev/src/JavaFx/interfaceproduit.css" text=" Reclamation" textFill="#fa9107">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/fichier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="med" alignment="BASELINE_LEFT" cache="true" graphicTextGap="10.0" mnemonicParsing="false" onAction="#GoMed" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" styleClass="mainFxmlClass" stylesheets="@../../../PIDEV/src/pidev/src/JavaFx/interfaceproduit.css" text="Medicaments" textFill="#fa9107">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/pills.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" cache="true" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" styleClass="mainFxmlClass" stylesheets="@../../../PIDEV/src/pidev/src/JavaFx/interfaceproduit.css" text="Consultation" textFill="#fa9107">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/consulting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="Post" alignment="BASELINE_LEFT" cache="true" graphicTextGap="10.0" mnemonicParsing="false" onAction="#GoPost" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;" styleClass="mainFxmlClass" stylesheets="@../../../PIDEV/src/pidev/src/JavaFx/interfaceproduit.css" text="Post" textFill="#fa9107">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/post.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="78.0" prefWidth="1256.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="78.0" prefWidth="232.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="174.0" layoutX="11.0" layoutY="6.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@assets/324452084_897478521451095_7670755937713308078_n.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="66.0" prefWidth="1092.0" style="-fx-background-color: #D3D3D3;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Pane prefHeight="68.0" prefWidth="384.0">
+                           <HBox.margin>
+                              <Insets left="700.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Button layoutX="308.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #D3D3D3;" textFill="#d1d1d100" />
+                              <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="303.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/logout.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="logoutButton" layoutX="153.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="29.0" prefWidth="135.0" text="log out" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+      <AnchorPane fx:id="contenu" layoutX="209.0" layoutY="93.0" prefHeight="734.0" prefWidth="1057.0" />
+   </children>
+</AnchorPane>

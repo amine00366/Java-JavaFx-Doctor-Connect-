@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.SignUpDoctorController">  
+    <children>
+ <GridPane hgap="10" layoutX="210.0" layoutY="50.0" vgap="10">
+    <Label text="nom:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="TFNom" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="prenom:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="TFPrenom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="TFEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Adresse:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="TFAdresse" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="Age:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="TFAge" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+<Label text="Cin:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField fx:id="TFCin" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+<Label text="Diplome:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TextField fx:id="TFDiplome" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <Label text="Specialite:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <TextField fx:id="TFSpecialite" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <TextField fx:id="TFPassword" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+</GridPane>
+            <Region prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #2a90FF;" />
+    
+       <Button layoutX="300.0" layoutY="389.0" mnemonicParsing="false" onAction="#ajouterd" style="-fx-font-family: Arial; -fx-font-size: 14px; -fx-alignment: center;" text="signup" />
+      <Button layoutX="509.0" layoutY="540.0" mnemonicParsing="false" onAction="#retourlogin" text="Annuler" />
+
+   </children>
+</AnchorPane>

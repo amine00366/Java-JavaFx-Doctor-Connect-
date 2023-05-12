@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.HomeController">
+   <children>
+      <Button fx:id="c" layoutY="49.0" mnemonicParsing="false" onAction="#changePage" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: white; -fx-border-color: #4CAF50; -fx-border-width: 2px; -fx-border-radius: 12%;" text="Categorie" />
+      <Button fx:id="m" layoutY="107.0" mnemonicParsing="false" onAction="#changePage" prefHeight="41.0" prefWidth="119.0" style="-fx-background-color: white; -fx-border-color: #4CAF50; -fx-border-radius: 12%; -fx-border-width: 2px;" text="Medicament" />
+      <Pane fx:id="p" layoutX="125.0" layoutY="45.0" prefHeight="335.0" prefWidth="451.0" />
+   </children>
+</AnchorPane>

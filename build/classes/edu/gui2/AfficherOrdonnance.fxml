@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="947.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.gui2.AfficherOrdonnanceController">
+    <stylesheets>
+        <URL value="@afficherordonnance.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="-3.0" layoutY="-3.0" prefHeight="100.0" prefWidth="950.0" styleClass="head-background" stylesheets="@style.css">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="29.0" prefHeight="62.0" prefWidth="365.0" text="Votre Ordonnance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="nomMedicamentLabel" layoutX="425.0" layoutY="100.0" prefHeight="100.0" prefWidth="226.0" text="NOM MEDICAMENT" textFill="#4daea7" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="doseLabel" layoutX="425.0" layoutY="200.0" prefHeight="45.0" prefWidth="226.0" text="DOSE (en milligramme) :" textFill="#4daea7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="frequenceLabel" layoutX="425.0" layoutY="275.0" prefHeight="45.0" prefWidth="226.0" text="FREQUENCE(Fois/Jours) :" textFill="#4daea7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateCreationLabel" layoutX="425.0" layoutY="350.0" prefHeight="45.0" prefWidth="226.0" text="DATE DE CREATION:" textFill="#4daea7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="100.0" prefHeight="45.0" prefWidth="226.0" text="NOM MEDICAMENT" textFill="#8f9dab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="200.0" prefHeight="45.0" prefWidth="226.0" text="DOSE (en milligramme) :" textFill="#8f9dab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="275.0" prefHeight="45.0" prefWidth="226.0" text="FREQUENCE(Fois/Jours) :" textFill="#8f9dab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="350.0" prefHeight="45.0" prefWidth="226.0" text="DATE DE CREATION:" textFill="#8f9dab">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button cancelButton="true" layoutX="711.0" layoutY="414.0" mnemonicParsing="false" onAction="#imprimerOrdonnance" prefHeight="34.0" prefWidth="98.0" styleClass="btn" stylesheets="@style.css" text="EXPORTER" textFill="#b8311f" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+   </children>
+</AnchorPane>

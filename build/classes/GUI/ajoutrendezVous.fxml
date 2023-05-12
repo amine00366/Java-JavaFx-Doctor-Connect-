@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutrendezVousController">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="969.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../Ressource/Back2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="284.0" prefHeight="35.0" prefWidth="134.0" stylesheets="@list.css" text="description">
+         <font>
+            <Font name="Eras Medium ITC" size="18.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="189.0" prefHeight="42.0" prefWidth="114.0" stylesheets="@list.css" text="nom du type">
+         <font>
+            <Font name="Eras Medium ITC" size="18.0" />
+         </font></Label>
+
+      <Button layoutX="139.0" layoutY="421.0" mnemonicParsing="false" onAction="#ajouterCov" prefHeight="49.0" prefWidth="285.0" style="-fx-background-radius: 30; -fx-background-color: #B8E7E1;" stylesheets="@list.css" text="ajouter" textFill="RED">
+         <effect>
+            <Blend>
+               <topInput>
+                  <Blend>
+                     <topInput>
+                        <Blend />
+                     </topInput>
+                  </Blend>
+               </topInput></Blend>
+         </effect>
+         <font>
+            <Font name="HP Simplified Hans Light" size="26.0" />
+         </font></Button>
+      <Label layoutX="36.0" layoutY="41.0" prefHeight="62.0" prefWidth="436.0" text="Ajouter un Type" textAlignment="CENTER" textFill="#bc5c5c">
+         <font>
+            <Font name="Consolas" size="30.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.81" />
+         </effect>
+      </Label>
+      <TextField fx:id="tftype" layoutX="207.0" layoutY="197.0" style="-fx-background-radius: 200;" text="" />
+      <TextField fx:id="tfcategorie" layoutX="189.0" layoutY="283.0" prefHeight="72.0" prefWidth="202.0" text="" />
+   </children>
+</AnchorPane>

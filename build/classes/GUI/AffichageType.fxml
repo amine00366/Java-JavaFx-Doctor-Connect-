@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AffichageTypeController">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="1057.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Ressource/doctorr.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="607.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="648.0" layoutY="17.0" mnemonicParsing="false" onAction="#nooo" prefHeight="45.0" prefWidth="151.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="Modifier un Type">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font></Button>
+      <Button layoutX="807.0" layoutY="17.0" mnemonicParsing="false" onAction="#ooo" prefHeight="45.0" prefWidth="151.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="Ajouter Type">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="672.0" layoutY="654.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="39.0" prefWidth="118.0" style="-fx-background-color: #F6FFDE;" stylesheets="@list.css" text="Actualiser" />
+      <ScrollPane layoutX="53.0" layoutY="149.0" prefHeight="492.0" prefWidth="910.0">
+         <content>
+            <VBox fx:id="vb" prefHeight="482.0" prefWidth="907.0" />
+         </content>
+      </ScrollPane>
+     <Label layoutX="74.0" layoutY="116.0" stylesheets="@list.css" text="Nom du type " textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <Label layoutX="476.0" layoutY="116.0" stylesheets="@list.css" text="Description" textFill="#fccaca">
+         <font>
+            <Font name="Castellar" size="16.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="14.0" prefHeight="50.0" prefWidth="366.0" text="Liste des types" textFill="#23b2b2">
+         <font>
+            <Font name="Britannic Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rech" layoutX="715.0" layoutY="99.0" prefHeight="34.0" prefWidth="245.0" style="-fx-background-radius: 200;" />
+   </children>
+</AnchorPane>

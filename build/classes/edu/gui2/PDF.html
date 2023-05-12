@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordonnance</title>
+	<style>
+		/* styles pour la mise en page de l'ordonnance */
+		.container {
+			width: 100%;
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px #ddd;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		table th {
+			background-color: #ddd;
+			padding: 10px;
+			font-weight: bold;
+			text-align: left;
+			border: 1px solid #ddd;
+		}
+		table td {
+			padding: 10px;
+			border: 1px solid #ddd;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Ordonnance</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Médicament</th>
+					<th>Dose</th>
+					<th>Fréquence</th>
+					<th>Date de création</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Boucle pour afficher chaque médicament de l'ordonnance -->
+				<!-- Ici, les données sont obtenues à partir d'une requête SQL -->
+				<!-- Les données sont injectées dynamiquement dans le code HTML avec une boucle foreach -->
+				<!-- La classe ordonnance contient les données de l'ordonnance qui ont été récupérées depuis la base de données -->
+				<!-- La boucle foreach itère à travers chaque élément de la liste et affiche les données correspondantes -->
+				<?php foreach ($ordonnance as $medicament) { ?>
+					<tr>
+						<td><?php echo $medicament['Nom_Medicament']; ?></td>
+						<td><?php echo $medicament['dose']; ?></td>
+						<td><?php echo $medicament['frequence']; ?></td>
+						<td><?php echo $medicament['date_creation']; ?></td>
+					</tr>
+				<?php } ?>
+			</tbody>
+		</table>
+		<button onclick="window.print()">Imprimer</button>
+	</div>
+</body>
+</html>

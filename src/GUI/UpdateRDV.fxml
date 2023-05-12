@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.UpdateRDVController">
+    <children>
+         <ImageView fitHeight="681.0" fitWidth="1334.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Ressource/ok1.jpg" />
+         </image>
+      </ImageView>
+         <Label layoutX="356.0" layoutY="184.0" prefHeight="35.0" prefWidth="134.0" stylesheets="@list.css" text="datedebut">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font></Label>
+       <Label layoutX="362.0" layoutY="266.0" prefHeight="35.0" prefWidth="134.0" stylesheets="@list.css" text="type">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font></Label>
+      <Label layoutX="370.0" layoutY="339.0" prefHeight="42.0" prefWidth="106.0" stylesheets="@list.css" text="categorie">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font></Label>
+            <Button layoutX="323.0" layoutY="518.0" mnemonicParsing="false" onAction="#modifier" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: A6D0DD;" stylesheets="@list.css" text="Modifier">
+ <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>    
+          <Label layoutX="303.0" layoutY="98.0" prefHeight="34.0" prefWidth="240.0" text="Modifier Rendez_Vous" textFill="#1d7390">
+              <font>
+            <Font name="Bernard MT Condensed" size="21.0" />
+         </font>
+      </Label>
+       <ScrollPane layoutX="517.0" layoutY="169.0" prefHeight="491.0" prefWidth="807.0">
+         <content>
+            <VBox fx:id="vb" prefHeight="476.0" prefWidth="806.0" />
+         </content>
+      </ScrollPane>
+                <ChoiceBox fx:id="choixType" layoutX="362.0" layoutY="381.0" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: FFF9DE;" />
+      <ChoiceBox fx:id="choixcat" layoutX="362.0" layoutY="314.0" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: FFF9DE;" />
+      <DatePicker fx:id="datedebut" layoutX="362.0" layoutY="219.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="517.0" layoutY="133.0" text="Doctor" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="667.0" layoutY="129.0" text="debut" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="840.0" layoutY="129.0" text=" fin" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="1121.0" layoutY="129.0" text="type" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="1230.0" layoutY="133.0" text="Actions" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="time" defaultColor="#f83307" layoutX="323.0" layoutY="450.0" />
+      <Label layoutX="348.0" layoutY="415.0" prefHeight="42.0" prefWidth="106.0" stylesheets="@list.css" text="Temp">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="goreserv" layoutX="323.0" layoutY="607.0" mnemonicParsing="false" onAction="#goreserv" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #F15A59;" text="Annuler" textFill="#140f0f">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="980.0" layoutY="129.0" text="categorie" textFill="#ff2f00">
+         <font>
+            <Font name="Brush Script MT Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="1121.0" layoutY="28.0" mnemonicParsing="false" onAction="#godoctors" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: A6D0DD;" stylesheets="@list.css" text="Ajouter Rendez Vous">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutY="-2.0" prefHeight="681.0" prefWidth="289.0" style="-fx-background-color: #D4FAFC;">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="319.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ImageView fitHeight="280.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressource/logopi.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="50.0" prefWidth="319.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goPost" prefHeight="72.0" prefWidth="217.0" style="-fx-background-color: #F6BA6F;" text="Post" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="44.0">
+                     <image>
+                        <Image url="@../Ressource/poster.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goRec" prefHeight="72.0" prefWidth="215.0" style="-fx-background-color: #F6BA6F;" text=" Reclamation" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../Ressource/icons8-add-bookmark-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#gomedica" prefHeight="72.0" prefWidth="212.0" style="-fx-background-color: #F6BA6F;" text="Medicament" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="46.0">
+                     <image>
+                        <Image url="@../Ressource/medicament.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goRDV" prefHeight="72.0" prefWidth="219.0" style="-fx-background-color: #F6BA6F;" text=" Rendez Vous" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@../Ressource/icons8-person-calendar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox prefHeight="9.0" prefWidth="328.0" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="106.0" text="log out " />
+         </children>
+      </VBox>
+      </children>
+     
+</AnchorPane>

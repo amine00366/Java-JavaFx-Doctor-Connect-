@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.LikePostStatController">
+       <children>
+      <ImageView fx:id="ImageP" fitHeight="697.0" fitWidth="1089.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/bg.jpg" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="StatCom" layoutX="204.0" layoutY="69.0" prefHeight="556.0" prefWidth="871.0" />
+      <ImageView fitHeight="161.0" fitWidth="159.0" layoutX="924.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Logo.png" />
+         </image>
+      </ImageView>
+           <FontAwesomeIconView fill="#0022ff" glyphName="ARROW_LEFT" layoutX="33.0" layoutY="56.0" onMouseClicked="#retour" size="30" wrappingWidth="34.0" />
+
+   </children>
+</AnchorPane>

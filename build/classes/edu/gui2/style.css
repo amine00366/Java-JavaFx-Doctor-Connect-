@@ -1,0 +1,91 @@
+.head-background
+{
+    -fx-background-color: linear-gradient(to left,#fff ,#4daea7);
+}
+
+
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color:  #4daea7;
+    -fx-border-radius: 8px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #000;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:  #4daea7;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0px 0px;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:40px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+    -fx-font-family:"Arial";
+}
+
+.search{
+    -fx-background-color: transparent;
+    -fx-border-color:  #4daea7;
+    -fx-border-radius: 5px;
+    -fx-font-size:13px;
+    -fx-font-family:"Arial";
+    -fx-border-width: 1px;
+    -fx-padding: 0px 0px 0px 12px;
+}
+
+.search:focused{
+    -fx-border-width: 2px;
+}
+
+
+.btn{
+    -fx-background-color:  #4daea7;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-font-family:"System";
+    -fx-font-weight:800;
+    -fx-cursor: hand;
+}
+
+.btn:hover{
+    -fx-background-color: #3a817b;
+}
+
+
+.datePicker{
+    -fx-background-color:  #F0F8FF;
+    -fx-border-color:  #F0F8FF;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+    -fx-text-fill : #fff;
+}
+
+.datePicker:focused{
+    -fx-border-width: 1.8px;
+    -fx-background-color:  #F0F8FF;
+}
+
+.comboBox{
+    -fx-background-color:  #F0F8FF;
+    -fx-border-color:  #F0F8FF;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+    -fx-text-fill : #fff;
+}
+
+.comboBox:selected{
+    -fx-border-width: 2px;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXML1postController">
+   <children>
+       <VBox fx:id="tfpostlistarrow" />
+      <Pane prefHeight="75.0" prefWidth="980.0">
+         <children>
+            <Label fx:id="label" graphicTextGap="5.0" layoutX="518.0" layoutY="13.0" prefHeight="50.0" prefWidth="250.0" text="Publication du Foolen" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Pane>
+      <ScrollPane fitToWidth="true" layoutX="34.0" layoutY="104.0" minHeight="0.0" minWidth="0.0" prefHeight="489.0" prefViewportHeight="400.0" prefWidth="1032.0" snapToPixel="false" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="tfpostlist" />
+         </content>
+      </ScrollPane>
+         <FontAwesomeIconView fill="#0022ff" glyphName="ARROW_LEFT" layoutX="33.0" layoutY="56.0" onMouseClicked="#retour" size="30" wrappingWidth="34.0" />
+
+   </children>
+</AnchorPane>
